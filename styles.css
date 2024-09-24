@@ -1,0 +1,23 @@
+/* styles.css */
+
+/* Reset margin and overflow for the body */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Style for both canvases */
+#threejs-canvas,
+#overlay-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Allow clicks to pass through to Three.js canvas */
+#overlay-canvas {
+    pointer-events: none;
+}
